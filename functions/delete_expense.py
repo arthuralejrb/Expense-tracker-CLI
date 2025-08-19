@@ -6,12 +6,18 @@ def delete_expense(args):
     """"""
 
     expenses = read_expenses()
-    expenses.pop(args.id - 1)
 
-    update_ids(expenses, args)
+    if args.all:
+        expenses.clear()
+        write_expense(expenses)
 
-    print(
-        f"[bold green]The expense [bold blue]ID:{args.id}[/bold blue] was successfully deleted![/bold green]")
+    else:
+        expenses.pop(args.id - 1)
+
+        update_ids(expenses, args)
+
+        print(
+            f"[bold green]The expense [bold blue]ID:{args.id}[/bold blue] was successfully deleted![/bold green]")
 
 
 def update_ids(expenses, args):

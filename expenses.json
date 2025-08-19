@@ -1,20 +1,16 @@
 [
    {
       "id": 1,
-      "amount": 16.0,
-      "category": null,
-      "description": "desodorante"
+      "amount": 100.0,
+      "category": "coisas",
+      "description": "item",
+      "date": "08m/19d/25yyy"
    },
    {
       "id": 2,
-      "amount": 9.0,
-      "category": null,
-      "description": "bakugan"
-   },
-   {
-      "id": 3,
-      "amount": 999.0,
-      "category": "desgra\u00e7a",
-      "description": "labubu"
+      "amount": 100.0,
+      "category": "coisass",
+      "description": "item",
+      "date": "08m/19d/25y"
    }
 ]
