@@ -3,7 +3,7 @@ from rich import print
 
 
 def update_expense(args):
-    """"""
+    """Changes given expense and write changes in json file"""
 
     expenses = read_expenses()
 

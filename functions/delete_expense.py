@@ -3,7 +3,7 @@ from rich import print
 
 
 def delete_expense(args):
-    """"""
+    """Deletes specific expense from json file"""
 
     expenses = read_expenses()
 
@@ -21,7 +21,7 @@ def delete_expense(args):
 
 
 def update_ids(expenses, args):
-    """"""
+    """update the ids of all expenses in json file"""
 
     for i in range(args.id - 1, len(expenses)):
         expenses[i]["id"] = i + 1
