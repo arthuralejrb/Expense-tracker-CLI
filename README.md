@@ -20,20 +20,23 @@ A CLI-based expense tracker built in Python. It uses `argparse` for robust comma
 
 ## Installation
 
-    1. Clone git repository
+1. Clone git repository
     
+    ```bash
     git clone https://github.com/arthuralejrb/Expense-tracker-CLI
     
 
 
-    2. Create a virtual enviroment
+2. Create a virtual enviroment
     
+    ```bash
     python -m venv venv
     
 
 
-    3. Activate the virtual enviroment
+3. Activate the virtual enviroment
     
+    ```bash
     # On MacOS and Linux:
     source venv/bin/activate
     
@@ -42,15 +45,16 @@ A CLI-based expense tracker built in Python. It uses `argparse` for robust comma
     
 
 
-    4. Install all requirements
+4. Install all requirements
     
+    ```bash
     pip install -r requirements.txt
     
 
 
 ## Usage
 
-```
+```bash
 python3 main.py add --amount 100 --d Lego --category Gifts #Adds an expense
 python3 main.py add --a 40 --description "books" #Another expense
 python3 main.py list #Lists all expenses
@@ -62,7 +66,7 @@ python3 main.py budget --month 4 --amount 300 #Sets a budget for a given month
 python3 main.py summary #Shows a summary of all expenses
 python3 main.py summary --month #Shows a summary of all expenses in a given month
 python3 main.py csv #Exports all data to a .CSV file
-```
+``
 
 
 ## Contributing
