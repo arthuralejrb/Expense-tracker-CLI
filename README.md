@@ -19,32 +19,33 @@ A CLI-based expense tracker built in Python. It uses `argparse` for robust comma
 
 
 ## Installation
+
     1. Clone git repository
-    ```
+    
     git clone https://github.com/arthuralejrb/Expense-tracker-CLI
-    ```
+    
 
 
     2. Create a virtual enviroment
-    ```
+    
     python -m venv venv
-    ```
+    
 
 
     3. Activate the virtual enviroment
-    ```
+    
     # On MacOS and Linux:
     source venv/bin/activate
     
     # On Windows:
     ./venv/Scripts/activate
-    ```
+    
 
 
     4. Install all requirements
-    ```
+    
     pip install -r requirements.txt
-    ```
+    
 
 
 ## Usage
