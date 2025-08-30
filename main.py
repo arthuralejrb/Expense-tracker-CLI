@@ -5,6 +5,7 @@ from functions.delete_expense import delete_expense
 from functions.list_expenses import list_expenses
 from functions.expenses_summary import show_summary
 from functions.set_budget import set_budget
+from functions.utils import convert_csv
 
 
 parser = argparse.ArgumentParser(prog='Expense tracker')
@@ -47,13 +48,13 @@ parser_update.add_argument('--category', '--c',
 # parser arguments for deleting a expense
 parser_delete = subparsers.add_parser('delete', help="Delete an expense")
 
+parser_delete.add_argument('--all',
+                           help="Delete all expenses", required=False,
+                           dest='all', action='store_true')
+
 parser_delete.add_argument('--id',
                            help="Expense id to delete", type=int,
                            required=False)
-
-parser_delete.add_argument('--all',
-                           help="Delete all expenses", required=False,
-                           action='store_false', dest='all')
 
 
 # parser arguments for listing expenses
@@ -83,6 +84,10 @@ parser_budget.add_argument('--amount', '--a',
                            required=True)
 
 
+parser_csv = subparsers.add_parser('csv',
+                                   help="Exports data to a .CSV file")
+
+
 args = parser.parse_args()
 command = args.commands
 
@@ -99,3 +104,5 @@ match (command):
         show_summary(args)
     case 'budget':
         set_budget(args)
+    case 'csv':
+        convert_csv()
