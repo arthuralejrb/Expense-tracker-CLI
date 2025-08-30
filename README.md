@@ -66,7 +66,7 @@ python3 main.py budget --month 4 --amount 300 #Sets a budget for a given month
 python3 main.py summary #Shows a summary of all expenses
 python3 main.py summary --month #Shows a summary of all expenses in a given month
 python3 main.py csv #Exports all data to a .CSV file
-``
+```
 
 
 ## Contributing
